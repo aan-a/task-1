@@ -13,7 +13,7 @@ GDRIVE_URL = "https://drive.google.com/uc?export=download&id=1rC0SB8e9an_na10flt
 
 # -- Download model from GDrive if not present --
 if not os.path.exists(MODEL_PATH):
-    with st.spinner("⏬ Downloading model weights..."):
+    with st.spinner("Downloading model weights..."):
         urllib.request.urlretrieve(GDRIVE_URL, MODEL_PATH)
         st.success("Model downloaded!")
 
